@@ -58,6 +58,7 @@ class LJSpider(scrapy.Spider):
         addressItem['regionPinyin'] = self.pinyin.get_initial_pinyin(region)
         addressItem['boardPinyin'] = self.pinyin.get_initial_pinyin(board)
         addressItem['estatePinyin'] = self.pinyin.get_initial_pinyin(estate)
+        lianjiaItem = LianJiaItem()
         yield addressItem
 
     @staticmethod
@@ -84,6 +85,6 @@ class LJSpider(scrapy.Spider):
 
 
 if __name__ == "__main__":
-    from tutorial.entrypoint import run_spider
+    from entrypoint import run_spider
 
     run_spider("LJSpider")
