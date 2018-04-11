@@ -18,7 +18,7 @@ class PinyinUtil:
     def get_pinyin(self, word):
         """
         汉字转拼音（全拼）
-        :param word: 汉字
+        :param word:  汉字
         :return: 拼音
         """
         return self.pinyin.get_pinyin(word, '')
