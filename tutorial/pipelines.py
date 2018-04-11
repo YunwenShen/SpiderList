@@ -47,7 +47,4 @@ class MongoPipeline(object):
             self.db[self.collection_house_name].insert(dict(item))
         return item
 
-if __name__ == "__main__":
-    client = pymongo.MongoClient("localhost")
-    db = client["rent"]["house"]
-    db.insert({"a":"b"})
+
