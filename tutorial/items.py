@@ -9,8 +9,6 @@ import scrapy
 
 
 class BaseItem(scrapy.Item):
-    # 城市
-    city = '杭州'
     # 城区
     region = scrapy.Field()
     # 商圈
