@@ -37,8 +37,6 @@ class MongoPipeline(object):
 
     def process_item(self, item, spider):
         if isinstance(item, AddressItem):
-            item['city'] = "杭州"
-            item['cityPinyin'] = 'hz'
             try:
                 self.db[self.collection_address_name].insert(dict(item))
             except DuplicateKeyError:
