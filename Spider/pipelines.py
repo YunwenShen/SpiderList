@@ -6,7 +6,7 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import pymongo
 
-from tutorial.items import AddressItem, LianJiaItem
+from Spider.items import AddressItem, LianJiaItem
 from pymongo.errors import DuplicateKeyError
 from scrapy.log import logger
 

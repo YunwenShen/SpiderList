@@ -6,9 +6,9 @@ import scrapy
 
 from scrapy.http import Request
 from lxml.html import etree
-from tutorial.items import AddressItem
-from tutorial.items import LianJiaItem
-from tutorial.utils import PinyinUtil
+from Spider.items import AddressItem
+from Spider.items import LianJiaItem
+from Spider.utils import PinyinUtil
 
 
 class LJSpider(scrapy.Spider):
